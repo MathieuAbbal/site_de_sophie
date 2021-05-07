@@ -1,0 +1,168 @@
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Sophie Cama IDEL</title>
+</head>
+
+<body>
+    <div>
+        <header class="bg-gray-800" x-data="{ isOpen: false }">
+            <nav class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+                <div class="flex items-center justify-between">
+                    <a class="text-xl font-bold text-white transition-colors duration-300 transform md:text-2xl hover:text-indigo-400"
+                        href="#">Sophie Cama</a>
+
+                    <!-- Mobile menu button -->
+                    <div @click="isOpen = !isOpen" class="flex md:hidden">
+                        <button type="button"
+                            class="text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400"
+                            aria-label="toggle menu">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                                <path fill-rule="evenodd"
+                                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                <div :class="isOpen ? 'flex' : 'hidden'"
+                    class="flex-col mt-2 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
+                    <a class="text-sm font-medium text-gray-200 transition-colors duration-300 transform hover:text-indigo-400"
+                        href="#description">Votre Infirmière</a>
+                    <a class="text-sm font-medium text-gray-200 transition-colors duration-300 transform hover:text-indigo-400"
+                        href="#info">Infos</a>
+                    <a class="text-sm font-medium text-gray-200 transition-colors duration-300 transform hover:text-indigo-400"
+                        href="#contact">Contact</a>
+
+                </div>
+            </nav>
+
+            <section class="flex items-center justify-center baniere" style="height: 500px;">
+                <div class="text-center">
+                    <p class="text-xl font-medium tracking-wider text-black-600">Bienvenue sur le site de SOPHIE </p>
+                    <h2 class="mt-6 text-3xl font-bold text-black md:text-5xl">Infirmière libérale Remplacente
+                    </h2>
+
+                    <div class="flex justify-center mt-8">
+                        <a class="px-8 py-2 text-lg font-medium text-white transition-colors duration-300 transform bg-gray-800 rounded hover:bg-indigo-500"
+                            href="tel:+33626038524">06 26 03 85 24</a>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+
+        <section class="bg-white">
+            <div class="max-w-5xl px-6 py-16 mx-auto">
+
+            </div>
+        </section>
+        <div class="md:my-8 px-6 max-w-md mx-auto bg-white rounded-md shadow overflow-hidden md:max-w-2xl">
+
+
+            <div class="my-8 px-6 max-w-md mx-auto bg-white rounded-md shadow-md overflow-hidden md:max-w-2xl">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                        <img class="h-48 w-full object-cover md:w-48 rounded-md" src="images/cabinet-infirmiere.jpg"
+                            alt="photo de Sophie ">
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Soins Infirmier sur
+                            PERPIGNAN</div>
+
+                        <p class="mt-2 text-gray-500">Les soins infirmiers sont réalisés uniquement sur
+                            prescription médicale et le cabinet est conventionné par la Sécurité sociale.
+                            Les soins délivrés par votre infirmière sont tous ceux que son diplôme lui permet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-8 px-6 max-w-md mx-auto bg-white rounded-md shadow-md overflow-hidden md:max-w-2xl">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                        <img class="h-48 w-full object-cover md:w-48 rounded-md" src="/images/so.jpg"
+                            alt="photo de Sophie ">
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Sophie Cama</div>
+                        <a href="#contact"
+                            class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Infirmière
+                            Libérale Remplacente</a>
+                        <p class="mt-2 text-gray-500">Infirmière libérale diplômée, je suis à votre disposition
+                            vous prodiguer les différents soins infirmiers sur prescription médicale à votre domicile ou
+                            au cabinet sur rendez-vous.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="bg-white">
+            <div class="max-w-5xl px-6 py-16 mx-auto">
+                <div class="grid gap-8 mt-10 md:mt-20 md:grid-cols-2">
+                    <div class="flex space-x-4">
+                        <svg class="w-6 h-6 text-gray-500" viewBox="0 0 50 50" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1 25C1 11.8023 11.8023 1 25 1C38.1977 1 49 11.8023 49 25C49 38.1977 38.1977 49 25 49C11.8023 49 1 38.1977 1 25ZM33.36 35.3573C34.7228 36.1959 36.5074 35.771 37.346 34.4082C38.1913 33.0346 37.7522 31.2351 36.3692 30.4053L28.221 25.5164C27.6186 25.155 27.25 24.504 27.25 23.8014V14.375C27.25 12.7872 25.9628 11.5 24.375 11.5C22.7872 11.5 21.5 12.7872 21.5 14.375V25.8236C21.5 27.2127 22.2206 28.5023 23.4036 29.2302L33.36 35.3573Z"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+
+                        <div id="info">
+                            <h4 class="text-xl font-medium text-gray-800">Activités</h4>
+                            <ul class="max-w-lg mt-4 text-gray-600">
+                                <li>Pansement</li>
+                                <li>Injections
+                                <li>Perfusion
+                                <li>Prise en charge diabétique</li>
+                                <li>Soins post opératoires</li>
+                                <li>Surveillance des traitements</li>
+                                <li>Chimiothérapie à domicile (perfusion)</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white">
+            <div class="max-w-5xl px-6 py-16 mx-auto">
+
+
+                <div class="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3" id="">
+                    <div class="px-6 py-8 overflow-hidden bg-white rounded-md shadow-md" id="contact">
+                        <h2 class="text-xl font-medium text-gray-800">Contact</h2>
+                        <p class="max-w-md mt-4 text-gray-400"> 06 rue Marcel Pagnol<br>
+                            66430 Bompas<br>
+                            06 26 03 85 24<br>
+                            sophiecama@hotmail.com
+
+                        </p>
+                    </div>
+
+                    <div class="px-6 py-8 overflow-hidden bg-white rounded-md shadow-md">
+                        <h2 class="text-xl font-medium text-gray-800">Informations complémentaire</h2>
+                        <p class="max-w-md mt-4 text-gray-400">numéro ADELI</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <footer class="border-t">
+            <div class="container flex items-center justify-between px-6 py-8 mx-auto">
+                <p class="text-gray-500">© 2021 MAT.</p>
+
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</body>
+
+</html>
