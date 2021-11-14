@@ -165,12 +165,22 @@
         <footer class="border-t">
 
             <div class="container flex items-center justify-between px-6 py-8 mx-auto">
-                <p class="text-gray-500">© 2021 MAT.</p>
+
+                <div class="mt-2 flex items-center justify-between px-6 py-8 mx-auto">©Mat <span id="s_annee"></span>.
+                </div>
 
 
             </div>
         </footer>
-        <div><a id="cRetour" class="cInvisible" href="#"></a></div>
+        <!-- <div><a id="cRetour" class="cInvisible" href="#"></a></div>-->
+        <!--Bouton scroll-->
+        <div id="back2Top" class=" float-right cursor-pointer p-2 fixed right-2 bottom-9">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                class="fill-current text-gray-500 dark:text-gray-50">
+                <path troke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm17-1h-4v8h-2v-8h-4l5-6 5 6z" />
+            </svg>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script src="index.js"></script>
