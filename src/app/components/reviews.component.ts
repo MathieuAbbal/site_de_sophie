@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Ce que disent nos patients</h2>
-          <div class="w-20 h-1 bg-blue-600 mx-auto mt-4 rounded"></div>
+          <div class="w-20 h-1 bg-teal-600 mx-auto mt-4 rounded"></div>
           <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
             Retrouvez les avis de nos patients sur notre fiche Google.
           </p>
@@ -51,14 +51,14 @@ export class ReviewsComponent {
       name: 'Hélène D',
       initial: 'H',
       date: 'Avril 2025',
-      avatarClass: 'bg-blue-600',
+      avatarClass: 'bg-teal-600',
       text: 'Très bon cabinet d\'infirmières. Marion comme Sophie sont extrêmement agréables et compétentes.'
     },
     {
       name: 'Rachida El azzaoui',
       initial: 'R',
       date: 'Juillet 2023',
-      avatarClass: 'bg-green-500',
+      avatarClass: 'bg-teal-500',
       text: 'Sophie est super ! Hyper douce et agréable.'
     }
   ];

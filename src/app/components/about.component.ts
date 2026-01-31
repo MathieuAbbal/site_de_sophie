@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Notre Cabinet</h2>
-          <div class="w-20 h-1 bg-blue-600 mx-auto mt-4 rounded"></div>
+          <div class="w-20 h-1 bg-teal-500 mx-auto mt-4 rounded"></div>
         </div>
 
         <div class="flex flex-col lg:flex-row items-center gap-12">
@@ -29,10 +29,10 @@ import { Component } from '@angular/core';
               par des professionnels diplômés d'État.
             </p>
             <div class="flex flex-wrap gap-4 pt-4">
-              <div class="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">Diplômés d'État</div>
-              <div class="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">ADELI : 666685458</div>
-              <div class="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">Cabinet conventionné</div>
-              <div class="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">Soins à domicile</div>
+              <div class="bg-teal-50 text-teal-700 px-4 py-2 rounded-full text-sm font-medium">Diplômés d'État</div>
+              <div class="bg-teal-50 text-teal-700 px-4 py-2 rounded-full text-sm font-medium">ADELI : 666685458</div>
+              <div class="bg-teal-50 text-teal-700 px-4 py-2 rounded-full text-sm font-medium">Cabinet conventionné</div>
+              <div class="bg-teal-50 text-teal-700 px-4 py-2 rounded-full text-sm font-medium">Soins à domicile</div>
             </div>
           </div>
         </div>
@@ -41,15 +41,15 @@ import { Component } from '@angular/core';
         <div class="mt-20">
           <div class="text-center mb-12">
             <h3 class="text-2xl font-bold text-gray-800">L'équipe</h3>
-            <div class="w-16 h-1 bg-blue-600 mx-auto mt-3 rounded"></div>
+            <div class="w-16 h-1 bg-teal-500 mx-auto mt-3 rounded"></div>
           </div>
           <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-2xl mx-auto">
             <div class="text-center">
               <img src="assets/images/sog.png" alt="Sophie Cama, infirmière libérale"
                 class="w-40 h-40 rounded-full object-cover mx-auto shadow-lg mb-4">
               <h4 class="text-lg font-semibold text-gray-800">Sophie Cama</h4>
-              <p class="text-blue-600 text-sm font-medium">Infirmière Libérale D.E.</p>
-              <p class="text-gray-500 text-sm mt-1">Fondatrice du cabinet</p>
+              <p class="text-teal-600 text-sm font-medium">Infirmière Libérale D.E.</p>
+              <p class="text-gray-500 text-sm mt-1">Associée du cabinet</p>
             </div>
           </div>
         </div>

@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href /site_de_sophie/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --base-href /site_de_sophie/ && ngh --dir=dist/site_de_sophie_angular/browser --no-silent"
   },
   "prettier": {
     "printWidth": 100,
@@ -37,6 +38,7 @@
     "@angular/cli": "^21.1.2",
     "@angular/compiler-cli": "^21.1.0",
     "@tailwindcss/postcss": "^4.1.18",
+    "angular-cli-ghpages": "^3.0.2",
     "jsdom": "^27.1.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18",
