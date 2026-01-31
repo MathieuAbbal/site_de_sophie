@@ -8,8 +8,10 @@ import { Component, signal } from '@angular/core';
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <a href="#" class="flex items-center space-x-2">
-            <img src="assets/images/icon-angel-grey.svg" alt="" class="w-8 h-8">
-            <span class="text-xl font-bold text-blue-600">Moulin à Vent Catalunya</span>
+            <svg class="w-8 h-8 text-teal-600" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v-4h4v-2h-4V6h-2v4H7v2h4v4z"/>
+            </svg>
+            <span class="text-xl font-bold text-teal-600">Moulin à Vent Catalunya</span>
           </a>
 
           <div class="hidden md:flex items-center space-x-8">
